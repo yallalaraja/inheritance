@@ -1,0 +1,20 @@
+class Vehicle{
+    int maxSpeed = 100;
+}
+class Car extends Vehicle{
+    
+    void display(){
+        int maxSpeed = 10;
+        System.out.println("max speed of car class "+maxSpeed);
+        System.out.println("max speed of super class vehicle "+super.maxSpeed);
+    }
+}
+class Test{
+    public static void main(String args[]){
+        Car c = new Car();
+        c.display();
+    }
+}
+ 
+ O/p:-max speed of car class 100
+      max speed of super class vehicle 120
