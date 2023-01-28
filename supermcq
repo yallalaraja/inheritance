@@ -1,0 +1,28 @@
+class Vehicle {
+    int seats;
+    int speed;
+
+    public Vehicle(int seats, int speed) {
+        this.seats = seats;
+        this.speed = speed;
+    System.out.print("Vehicle ");
+    
+    }
+}
+
+class Car extends Vehicle {
+    int id;
+   public Car(int seats,int speed) {
+       super(seats,speed);
+    System.out.print("Car ");
+    }
+}
+
+class Main {
+    public static void main(String args[]) {
+    Car c = new Car(4,100);
+    }       
+}
+
+
+O/p:- vehicle car
